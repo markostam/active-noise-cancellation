@@ -3,6 +3,7 @@
 
 #define mu 1E-11 // learning rate
 #define N 128 // number of adaptive filter weights
+#define NUM_SECTIONS 128
 
 AIC31_data_type codec_data;
 
