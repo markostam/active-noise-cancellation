@@ -4,6 +4,8 @@ I wrote these as part of my final project for an [Audio Signal Processing](http:
 
 I've also included [a short & not very serious powerpoint](https://github.com/markostam/active-noise-cancellation/blob/master/noise_cancellation_recurse2.pptx) of a 5 minute lightning talk I gave on the project later at the Recurse Center. 
 
+Here's a [slightly more serious paper](http://www.ece.rochester.edu/~zduan/teaching/ece472/projects/2016/Stamenovic_paper.pdf) I wrote about some of my experiments with ANC and this code.
+
 Functions include:
 + **LMS (Least Mean Squares):** most basic canonical ANC algo
   + [in C](https://github.com/markostam/active-noise-cancellation/blob/master/Code/adaptive_mss.c)
