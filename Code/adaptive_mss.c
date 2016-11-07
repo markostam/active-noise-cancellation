@@ -2,14 +2,14 @@
 #include "readme.cof"
 
 #define mu 1E-11 // learning rate
-#define N 128 // number of adaptive filter weights
-#define NUM_SECTIONS 128
+#define N 128 // length of delay line/adaptive filter
+#define NUM_SECTIONS 128 // number of weights in synthetic transfer functino
 
 AIC31_data_type codec_data;
 
 float weights[N]; // adaptive filter weights
-float x[N]; // adaptive filter delay line
-float w[NUM_SECTIONS][2];
+float x[N]; //  delay line
+float w[NUM_SECTIONS][2]; // synthetic transfer functino weights
 
 interrupt void interrupt4(void)
 {
@@ -18,14 +18,14 @@ interrupt void interrupt4(void)
 
 	codec_data.uint = input_sample();
 
-	refnoise =(codec_data.channel[LEFT]); // noise sensor - inside engine or engine on outside of headphones
+	refnoise =(codec_data.channel[LEFT]); // noise sensor - on outside of headphones
 
 	input = refnoise;
 
     for (i=0; i < NUM_SECTIONS; i++) 
     // filter refnoise (noise sensor input) 
-    //	to emulate transfer function of firewall
-   	// readme.cof contains a low pass 3rd order FIR cheby filter
+    //	to emulate transfer function of headphone wall
+    // readme.cof contains a low pass 3rd order FIR cheby filter
     {
 
     	wn = input - a[i][1]*w[i][0] - a[i][2]*w[i][1];
