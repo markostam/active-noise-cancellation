@@ -1,6 +1,6 @@
 # Active Noise Cancellation Functions in Matlab and C
-A bunch of functinos implementing active noise cancellation using various LMS algorithms (FxLMS, FuLMS, NLMS) in Matlab and C.
-Initially I implemented these for an [Audio Signal Processing](http://www.ece.rochester.edu/~zduan/teaching/ece472/index.html) class during my masters in ECE.
+A bunch of functions implementing active noise cancellation using various LMS algorithms (FxLMS, FuLMS, NLMS) in Matlab and C.
+Initially I wrote these for an [Audio Signal Processing](http://www.ece.rochester.edu/~zduan/teaching/ece472/index.html) class during my masters.
 
 Functions include:
 + LMS (Least Mean Squares) - most basic canonical ANC algo 
