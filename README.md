@@ -2,7 +2,7 @@
 A bunch of functions implementing active noise cancellation using various LMS algorithms (FxLMS, FuLMS, NLMS) in Matlab and C.
 I wrote these as part of my final project for an [Audio Signal Processing](http://www.ece.rochester.edu/~zduan/teaching/ece472/index.html) class during my masters.
 
-I've also included [a short & not very serious powerpoint](https://github.com/markostam/active-noise-cancellation/blob/master/noise_cancellation_recurse2.pptx) of a 5 minute lightning talk I gave on the project later at the Recurse Center. 
+I've also included [a short & not very serious powerpoint](https://github.com/markostam/active-noise-cancellation/blob/master/noise_cancellation_recurse2.pptx) of a 5 minute lightning talk I gave on the project later at the [Recurse Center](https://recurse.com). 
 
 Here's a [slightly more serious paper](http://www.ece.rochester.edu/~zduan/teaching/ece472/projects/2016/Stamenovic_paper.pdf) I wrote about some of my experiments with ANC and this code.
 
